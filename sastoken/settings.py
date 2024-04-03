@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-fjxm3&sc82k0htqr#$372ds4*2ii*&k(qljz8_5a10-go9=v)f
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+AZURE_STORAGE_KEY = 'storage_key'
 AZURE_CONTAINER_NAME = 'container_name'
 AZURE_BLOB_NAME = 'blob_name'
 ALLOWED_HOSTS = []

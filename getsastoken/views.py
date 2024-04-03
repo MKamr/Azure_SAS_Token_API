@@ -11,7 +11,7 @@ def generate_sas_token(request):
     if not container_name or not blob_name:
         return Response({'error': 'Container name and blob name are required'}, status=400)
 
-    account_key = 'Lw5bqheJg+Kl1e6M5+2Zm0sm1sZ9sMYXgY28F60JtBPRdUalYY25smlj2d6WD4mJ7tpAeacpjL46+AStl9nvow=='
+    account_key = request.data.get('storage_key')
     account_url = 'https://allrestorage1.blob.core.windows.net/'
 
     blob_service_client = BlobServiceClient(account_url=account_url, credential=account_key)
